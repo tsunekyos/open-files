@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:open-files.openFilesFromInput"
+    "onCommand:open-files.openFilesFromCurrentFile"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "open-files.openFilesFromInput",
-        "title": "Open Files from Input"
+        "command": "open-files.openFilesFromCurrentFile",
+        "title": "open-files: Open files from current file"
       }
     ],
     "configuration": {
