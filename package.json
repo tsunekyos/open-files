@@ -1,0 +1,44 @@
+{
+  "name": "open-files",
+  "displayName": "Open Files",
+  "description": "複数のファイルを一度に開く拡張機能",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:open-files.openFilesFromInput"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "open-files.openFilesFromInput",
+        "title": "Open Files from Input"
+      }
+    ],
+    "configuration": {
+      "title": "Open Files",
+      "properties": {
+        "openFiles.inputFilePath": {
+          "type": "string",
+          "default": "input.txt",
+          "description": "入力ファイルのパス（ワークスペースルートからの相対パス）"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^14.14.37",
+    "typescript": "^4.3.5"
+  }
+}
