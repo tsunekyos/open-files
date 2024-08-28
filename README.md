@@ -1,71 +1,37 @@
-# test2 README
+# Open Files
 
-This is the README for your extension "test2". After writing up a brief description, we recommend including the following sections.
+## 概要
 
-## Features
+この VS Code 拡張機能は、現在開いているファイルの内容に基づいて、複数のファイルを一度に開くことができます。ファイルパスのリストが記載されたテキストファイルから、指定されたファイルを自動的に開く機能を提供します。
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## 機能
 
-For example if there is an image subfolder under your extension project workspace:
+- 現在アクティブなエディタのファイル内容を読み取ります
+- ファイル内の各行をファイルパスとして解釈します
+- 指定されたファイルパスに対応するファイルを開きます
+- 開いたファイルは新しいエディタタブに表示されます
+- 存在しないファイルや開けないファイルがある場合は警告メッセージを表示します
 
-\!\[feature X\]\(images/feature-x.png\)
+## インストール
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+この拡張機能は一般公開されていないため、以下の手順でインストールしてください：
 
-## Requirements
+1. ターミナルを開き、VS Code の拡張機能ディレクトリに移動：
+   - Windows: `cd %USERPROFILE%\.vscode\extensions`
+   - macOS/Linux: `cd ~/.vscode/extensions`
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+2. GitHub リポジトリをクローン：
+   ```
+   git clone https://github.com/あなたのユーザー名/リポジトリ名.git open-files
+   ```
 
-## Extension Settings
+3. VS Code を再起動
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
+## 使用方法
 
-This extension contributes the following settings:
+1. ファイルパスのリストが記載されたテキストファイルを開きます
+2. コマンドパレットを開きます（`Ctrl+Shift+P` または `Cmd+Shift+P`）
+3. "open-files: Open files from current file" コマンドを実行します
+4. 拡張機能が自動的に各ファイルを開きます
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
