@@ -22,7 +22,7 @@
 
 2. GitHub リポジトリをクローン：
    ```
-   git clone https://github.com/あなたのユーザー名/リポジトリ名.git open-files
+   git clone https://github.com/tsunekyos/open-files.git open-files
    ```
 
 3. VS Code を再起動
